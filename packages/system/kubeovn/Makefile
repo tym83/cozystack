@@ -13,5 +13,5 @@ diff:
 update:
 	rm -rf charts && mkdir -p charts/kube-ovn
 	curl -sSL https://github.com/kubeovn/kube-ovn/archive/refs/heads/master.tar.gz | \
-	tar -C charts/kube-ovn -xzvf - --strip 2 kube-ovn-master/charts
+	tar -C charts/kube-ovn -xzvf - --strip 3 kube-ovn-master/charts/kube-ovn
 	patch -p4 < patches/cozyconfig.diff
